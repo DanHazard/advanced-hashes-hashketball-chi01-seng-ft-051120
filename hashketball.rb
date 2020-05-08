@@ -217,7 +217,7 @@ def player_stats(player_name)
           #binding.pry
           if data_item[:player_name] == player_name
             p_stats = data_item
-            p_stats.delete(:player_name)
+            #p_stats.delete(:player_name)
           end
         end
       end
