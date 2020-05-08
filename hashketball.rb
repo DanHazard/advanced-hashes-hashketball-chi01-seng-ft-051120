@@ -227,7 +227,14 @@ def player_stats(player_name)
 end
 
 def big_shoe_rebounds
-  
+  num_rebounds = ""
+  shoe_sz = ""
+  game_hash.each do |location, team_info|
+    team_info.each do |attribute, data|
+      if attribute == :players
+        data.each do |data_item|
+          
+        
 end
 
 
