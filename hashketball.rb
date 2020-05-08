@@ -214,7 +214,7 @@ def player_stats(player_name)
     team_info.each do |attribute, data|
       if attribute == :players
         data.each do |data_item|
-          binding.pry
+          #binding.pry
           if data_item[:player_name] == player_name
             p_stats = data_item
             p_stats.delete(:player_name)
