@@ -210,6 +210,7 @@ end
 def player_stats(player_name)
   p_stats = {}
   game_hash.each do |location, team_info|
+    binding.pry
     team_info.each do |attribute, data|
       if attribute == :players
         data.each do |data_item|
