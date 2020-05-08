@@ -210,10 +210,11 @@ end
 def player_stats(player_name)
   p_stats = {}
   game_hash.each do |location, team_info|
-    binding.pry
+
     team_info.each do |attribute, data|
       if attribute == :players
         data.each do |data_item|
+          binding.pry
           if data_item[:player_name] == player_name
             p_stats = data_item
             p_stats.delete(:player_name)
